@@ -1,0 +1,14 @@
+[
+  {
+    "run": "19011022K",
+    "nombre": "Ana Pérez",
+    "correo": "ana@gmail.com",
+    "rol": "Cliente"
+  },
+  {
+    "run": "201234567",
+    "nombre": "Luis Soto",
+    "correo": "luis@duoc.cl",
+    "rol": "Vendedor"
+  }
+]

@@ -1,0 +1,1 @@
+export default function Footer({ onAdmin }) { return <footer className="bg-dark text-white text-center py-4"><p className="mb-1 fw-bold">Gourmet & Co.</p><small>© 2026 - Desarrollo Fullstack II</small><div className="mt-2"><button className="btn btn-link text-white-50 small" onClick={onAdmin}>Administración</button></div></footer>; }

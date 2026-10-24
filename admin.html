@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gourmet & Co.</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">Gourmet & Co.</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#carritoCanvas">
+             Carrito (<span id="cantidadCarrito">0</span>)
+            </button>
+          </li>
+          
+          <a class="navbar-brand fw-bold" href="index.html">
+          <a href="index.html" class="btn btn-outline-light">Admin</a>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PRINCIPAL -->
+  <header id="inicio" class="hero d-flex align-items-center">
+    <div class="container text-center text-white">
+      <h1 class="display-3 fw-bold">Gourmet & Co.</h1>
+      <p class="lead">Sabores que cuentan historias</p>
+      <p>Productos artesanales seleccionados para disfrutar y regalar</p>
+      <a href="#productos" class="btn btn-light btn-lg mt-2">Ver productos</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2>Nuestros productos</h2>
+          <p class="text-muted">Una selección de café, chocolates, quesos y vinos.</p>
+        </div>
+
+        <div id="listaProductos" class="row g-4"></div>
+      </div>
+    </section>
+
+    <!-- PROMOCION -->
+    <section class="promo py-5 text-center">
+      <div class="container">
+        <h2>Canastas Gourmet</h2>
+        <p class="mb-0">Una alternativa especial para regalos y ocasiones importantes.</p>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <h2>Pasión por lo artesanal</h2>
+            <p>
+              Gourmet & Co. reúne productos de pequeños productores,
+              seleccionados por su calidad, sabor y dedicación.
+            </p>
+            <p>
+              Nuestra propuesta busca acercar experiencias gourmet a quienes
+              disfrutan descubrir nuevos sabores o encontrar un regalo especial.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="img/logo.png.png" alt="Gourmet & Co." class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2>Consejos Gourmet</h2>
+        </div>
+
+        <div class="row g-4">
+          <article class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5">Cómo maridar un buen vino con quesos madurados</h3>
+                <p class="text-muted">
+                  Aprende algunas combinaciones simples para disfrutar mejor
+                  diferentes tipos de vino y queso.
+                </p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#blogVino">
+                  Leer más
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5">V60 vs Prensa Francesa</h3>
+                <p class="text-muted">
+                  Conoce las diferencias básicas entre dos métodos populares
+                  para preparar café de especialidad.
+                </p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#blogCafe">
+                  Leer más
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h2 class="text-center mb-4">Contacto</h2>
+
+            <form id="formContacto" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" maxlength="100">
+                <div class="text-danger small" id="errorNombre"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" id="correo" class="form-control" maxlength="100">
+                <div class="text-danger small" id="errorCorreo"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="comentario" class="form-label">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="5" maxlength="500"></textarea>
+                <div class="text-danger small" id="errorComentario"></div>
+              </div>
+
+              <button type="submit" class="btn btn-dark w-100">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-1 fw-bold">Gourmet & Co.</p>
+    <small>© 2026 - Desarrollo Fullstack II</small>
+    <div class="mt-2">
+      <a href="admin.html" class="text-white-50 small">Administración</a>
+    </div>
+  </footer>
+
+  <!-- CARRITO OFFCANVAS -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Mi carrito</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="contenidoCarrito"></div>
+
+      <hr>
+
+      <div class="d-flex justify-content-between fw-bold fs-5">
+        <span>Total:</span>
+        <span id="totalCarrito">$0</span>
+      </div>
+
+      <button id="btnVaciar" class="btn btn-outline-danger w-100 mt-3">
+        Vaciar carrito
+      </button>
+    </div>
+  </div>
+
+  <!--BLOG VINO -->
+  <div class="modal fade" id="blogVino" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vino y quesos madurados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Los quesos intensos suelen combinar bien con vinos de mayor cuerpo,
+          mientras que quesos más suaves pueden acompañarse con vinos más ligeros.
+          La idea es buscar equilibrio entre aromas, textura y sabor.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--BLOG CAFE -->
+  <div class="modal fade" id="blogCafe" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">V60 vs Prensa Francesa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          El V60 utiliza un filtro de papel y entrega una taza más limpia.
+          La prensa francesa mantiene más aceites del café y suele generar una
+          bebida con mayor cuerpo.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/tienda.js"></script>
+</body>
+</html>

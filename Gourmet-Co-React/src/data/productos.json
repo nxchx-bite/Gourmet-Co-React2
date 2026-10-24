@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "Café Colombia",
+    "categoria": "Café & Té",
+    "precio": 12990,
+    "imagen": "https://images.unsplash.com/photo-1633627346972-0f3dfa551171?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "CAF001",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "nombre": "Café Etiopía",
+    "categoria": "Café & Té",
+    "precio": 14990,
+    "imagen": "https://images.unsplash.com/photo-1679917010073-ead631d41d91?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "CAF002",
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "nombre": "Té Earl Grey",
+    "categoria": "Café & Té",
+    "precio": 7990,
+    "imagen": "https://images.unsplash.com/photo-1605618826115-fb9e775cfb40?q=80&w=1158&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "TEA001",
+    "stock": 12
+  },
+  {
+    "id": 4,
+    "nombre": "Chocolate Artesanal 70%",
+    "categoria": "Chocolates & Dulces",
+    "precio": 6990,
+    "imagen": "https://images.unsplash.com/photo-1575377427642-087cf684f29d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "CHO001",
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "nombre": "Caja de Bombones",
+    "categoria": "Chocolates & Dulces",
+    "precio": 8490,
+    "imagen": "https://images.unsplash.com/photo-1687795097254-f019f9d7fd17?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "CHO002",
+    "stock": 9
+  },
+  {
+    "id": 6,
+    "nombre": "Trufas de Chocolate",
+    "categoria": "Chocolates & Dulces",
+    "precio": 9990,
+    "imagen": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "CHO003",
+    "stock": 11
+  },
+  {
+    "id": 7,
+    "nombre": "Queso Maduro",
+    "categoria": "Quesos & Charcutería",
+    "precio": 9990,
+    "imagen": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "QUE001",
+    "stock": 7
+  },
+  {
+    "id": 8,
+    "nombre": "Tabla de Charcutería",
+    "categoria": "Quesos & Charcutería",
+    "precio": 18990,
+    "imagen": "https://images.unsplash.com/photo-1601912262364-3a35aa0d9399?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "CHA001",
+    "stock": 5
+  },
+  {
+    "id": 9,
+    "nombre": "Queso Brie Artesanal",
+    "categoria": "Quesos & Charcutería",
+    "precio": 11990,
+    "imagen": "https://images.unsplash.com/photo-1707037490967-d763ec8daeb5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "QUE002",
+    "stock": 6
+  },
+  {
+    "id": 10,
+    "nombre": "Vino Reserva",
+    "categoria": "Vinos & Licores",
+    "precio": 15990,
+    "imagen": "https://images.unsplash.com/photo-1656361281529-c6776ededefa?q=80&w=731&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "VIN001",
+    "stock": 14
+  },
+  {
+    "id": 11,
+    "nombre": "Vino Carménère",
+    "categoria": "Vinos & Licores",
+    "precio": 17990,
+    "imagen": "https://images.unsplash.com/photo-1641653383551-34556ddd5db1?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "VIN002",
+    "stock": 10
+  },
+  {
+    "id": 12,
+    "nombre": "Degustación de Café",
+    "categoria": "Café & Té",
+    "precio": 0,
+    "imagen": "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "codigo": "DEG001",
+    "stock": 20
+  }
+]

@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f5ef;
+  color: #2f2a26;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(rgba(35, 25, 20, 0.55), rgba(35, 25, 20, 0.55)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+}
+
+.hero p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.producto-card {
+  transition: transform 0.2s;
+}
+
+.producto-card:hover {
+  transform: translateY(-4px);
+}
+
+.producto-img {
+  height: 210px;
+  object-fit: cover;
+}
+
+.promo {
+  background-color: #e7dccb;
+}
+
+.placeholder-box {
+  min-height: 280px;
+  background-color: #ded4c6;
+  border: 2px dashed #8a7764;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a5a4b;
+}
+
+.carrito-item {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.precio-free {
+  font-weight: bold;
+  color: #198754;
+}
