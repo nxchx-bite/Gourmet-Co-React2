@@ -67,4 +67,22 @@ it('9. Muestra el catálogo vacío cuando no hay productos', () => {
   expect(screen.queryByText('Café Colombia')).toBeNull();
   expect(screen.queryByText('Vino Reserva')).toBeNull();
 });
+it('12. No permite agregar un producto sin stock', () => {
+  const agregar = jasmine.createSpy('agregar');
+
+  render(
+    <Producto
+      producto={{ ...cafe, stock: 0 }}
+      onAgregar={agregar}
+    />
+  );
+
+  const boton = screen.getByRole('button', { name: 'Sin stock' });
+
+  expect(boton.disabled).toBeTrue();
+
+  fireEvent.click(boton);
+
+  expect(agregar).not.toHaveBeenCalled();
+});
 });
