@@ -1,0 +1,30 @@
+
+.acceso-admin-pagina {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.acceso-admin-tarjeta {
+  width: 100%;
+  max-width: 430px;
+  padding: 32px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.acceso-admin-tarjeta h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.acceso-admin-tarjeta p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}

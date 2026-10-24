@@ -1,0 +1,5 @@
+
+.producto-card { transition: transform 0.2s; }
+.producto-card:hover { transform: translateY(-4px); }
+.producto-img { height: 210px; object-fit: cover; }
+.precio-free { font-weight: bold; color: #198754; }
